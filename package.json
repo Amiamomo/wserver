@@ -9,6 +9,7 @@
     "build": "webpack",
     "commit": "git-cz",
     "test": "mocha src/main.test.js -w",
+    "test:single": "mocha src/main.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
