@@ -1,17 +1,19 @@
 {
   "name": "wserver",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "WebSocket server",
   "main": "index.js",
   "scripts": {
     "start1": "webpack-dev-server --progress -w ",
     "start": "webpack-dev-server --progress --inline -w --hot",
     "build": "webpack",
-    "test": "mocha src/main.test.js -w"
+    "commit": "git-cz",
+    "test": "mocha src/main.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Amiamomo/wserver.git"
+    "url": "https://github.com/Amiamomo/wserver.git"
   },
   "keywords": [
     "Websocket"
@@ -33,8 +35,14 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "^3.5.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
     "mocha": "^3.2.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "semantic-release": "^6.3.2"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
