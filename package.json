@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start1": "webpack-dev-server --progress -w ",
-    "start": "webpack-dev-server --progress --inline -w --hot",
+    "start3": "webpack-dev-server --progress --inline -w --hot",
+    "start4": "nodemon server.js",
+    "start": "nodemon bin/www",
     "build": "webpack",
     "commit": "git-cz",
     "test": "mocha src/main.test.js -w",
@@ -19,13 +21,20 @@
   "keywords": [
     "Websocket"
   ],
-  "author": "Amiamomo",
+  "author": "amiamomo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Amiamomo/wserver/issues"
   },
   "homepage": "https://github.com/Amiamomo/wserver#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "^2.4.3",
     "webpack": "^2.4.0",
     "webpack-dev-server": "^2.4.2"
   },
@@ -39,6 +48,7 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "semantic-release": "^6.3.2"
