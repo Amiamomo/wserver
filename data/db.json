@@ -1,0 +1,28 @@
+{
+  "user": {
+    "name": "alexxxx"
+  },
+  "contents": [
+    {
+      "id": 1,
+      "req": {
+        "name": "ta gueeeeeeule"
+      },
+      "cmd": "Add"
+    },
+    {
+      "id": 2,
+      "req": {
+        "name": "débile"
+      },
+      "cmd": "Add"
+    },
+    {
+      "id": "c1f014a2-f2e3-4055-ab58-dbbe00afacf6",
+      "req": {
+        "name": "thirrrrd"
+      },
+      "cmd": "Add"
+    }
+  ]
+}

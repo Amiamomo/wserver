@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const uuid = require('uuid')
 
 // database setup
 const low = require('lowdb')
@@ -17,7 +18,7 @@ router.get('/', function(req, res, next) {
 /* POST users listing. */
 router.post('/', function(req, res, next) {
   console.log(req.body) 
-    db.get("contents").push({req:req.body, title:'Uck'})
+    db.get("contents").push({id:uuid(), req:req.body, cmd:'Add'})
   //.set('user.name', args[2])
   .write()
   res.send(req.body);

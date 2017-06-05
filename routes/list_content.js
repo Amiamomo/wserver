@@ -9,17 +9,16 @@ const db = low('data/db.json', {
   storage: fileAsync
 })
 
-/* GET users listing. */
+/* GET contents listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  var res1 =  db.get("contents");
+  res.body = res1;
+  res.send(res1);
 });
 
-/* POST users listing. */
+/* POST contents listing. */
 router.post('/', function(req, res, next) {
-  console.log(req.body) 
-    db.get("contents").push({req:req.body, title:'Uck'})
-  //.set('user.name', args[2])
-  .write()
+  console.log(req.body) ;
   res.send(req.body);
 }); 
 
