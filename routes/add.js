@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 /* POST users listing. */
 router.post('/', function(req, res, next) {
   console.log(req.body) 
-    db.get("contents").push({id:uuid(), req:req.body, cmd:'Add'})
+    db.get("contents").push({_id:uuid(), req:req.body, cmd:'Add'})
   //.set('user.name', args[2])
   .write()
   res.send(req.body);

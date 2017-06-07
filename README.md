@@ -1,11 +1,16 @@
 "# wserver" 
 
-Express + Web Service (RESTFUL) using lightweight database : dblow 
+# Express + Web Service (RESTFUL) using lightweight database : dblow 
 
+
+## Intro
+
+## Document and references
 
 https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
 https://closebrace.com/tutorials/2017-03-02/creating-a-simple-restful-web-app-with-nodejs-express-and-mongodb
 
+## Installation steps
 npm install --save-dev nodemon
 npm install express --save
 

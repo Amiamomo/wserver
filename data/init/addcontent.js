@@ -12,7 +12,7 @@ console.log(args.length);
 
 if (args.length == 3) {
     console.log("Pushing :"+args[2]);
-
+ 
   db.get("contents").push({id:1, user:args[2], title:'Uck'})
   //.set('user.name', args[2])
   .write()

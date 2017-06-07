@@ -11,6 +11,7 @@ const db = low('data/db.json', {
 
 /* GET contents listing. */
 router.get('/', function(req, res, next) {
+  console.error("list_content");
   var res1 =  db.get("contents");
   res.body = res1;
   res.send(res1);

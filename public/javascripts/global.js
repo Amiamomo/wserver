@@ -33,3 +33,4 @@ function populateTable() {
         $('#userList table tbody').html(tableContent);
     });
 };
+
