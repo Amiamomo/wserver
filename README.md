@@ -7,18 +7,17 @@
 
 ## Document and references
 
-https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
-https://closebrace.com/tutorials/2017-03-02/creating-a-simple-restful-web-app-with-nodejs-express-and-mongodb
+* https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
+* https://closebrace.com/tutorials/2017-03-02/creating-a-simple-restful-web-app-with-nodejs-express-and-mongodb
 
 ## Installation steps
-npm install --save-dev nodemon
-npm install express --save
+* npm install --save-dev nodemon
+* npm install express --save
+* npm update -g express-generator
+* npm install body-parser --save
 
-npm update -g express-generator
-npm install body-parser --save
 
-
-Installing postman (amiamomo, connected through Google)
+### Installing postman (ao, connected through Google)
 C:\Users\allacour\AppData\Local\Postman\Update.exe --processStart "Postman.exe"
     To send a JSON request : Go to Body, select raw, change Text to JSON
     Add request / post
